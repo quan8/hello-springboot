@@ -1,0 +1,10 @@
+---
+applications:
+- name: hello-springboot
+  memory: 32M
+  instances: 1
+  services: []
+  host: hello-springboot-rags
+  path: ./target/hello-0.0.1-SNAPSHOT.jar
+  env:
+   JAVA_OPTS: -Drebel.remoting_plugin=true
